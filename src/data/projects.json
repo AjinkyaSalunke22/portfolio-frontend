@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Impact SDLC",
+    "createdAt": "Jan 2025",
+    "description": "Jira-like project management tool enhanced with AI features for auto-generating test cases and source code.",
+    "technologies": ["Node.js", "Azure", "React", "MongoDB", "LLMs"],
+    "contributions": [
+      "Designed and developed full backend: task management, AI integrations, user access control",
+      "Developed Node.js/Express APIs for projects, tasks, test generation, and code workflows",
+      "Integrated LLM AIs for generation features and deploying on Azure",
+      "Implemented secure user authentication and role-based access",
+      "Managed deployment end-to-end using Azure DevOps and Docker containers"
+    ]
+  },
+  {
+    "name": "Gen AI Innovations",
+    "createdAt": "Jan 2025",
+    "description": "Hands-on exploration and deployment of cutting-edge Generative AI models with GPU optimization.",
+    "technologies": ["Python", "HuggingFace", "FastAPI", "GPU", "WebGPU"],
+    "contributions": [
+      "Set up and optimized GPU drivers and frameworks (CUDA, cuDNN) for model execution efficiency",
+      "Successfully deployed Microsoft's 1-bit model on local Ubuntu GPU",
+      "Scripted and automated the end-to-end process for model deployment, inference, and benchmarking",
+      "Integrated HuggingFace Transformer models, and assessed the impact of quantization",
+      "Developed, tested, and exposed FastAPI endpoints for inference as part of a scalable backend service"
+    ]
+  },
+  {
+    "name": "SEO Bot",
+    "createdAt": "Oct 2024",
+    "description": "Automatic blog writing bot generating content based on user topics using Ollama AI with Google Indexing integration.",
+    "technologies": ["Node.js", "Express", "React", "MongoDB", "AWS"],
+    "contributions": [
+      "Developed primary backend services with Node.js and Express",
+      "Integrated Google Indexing API for automated publishing",
+      "Managed deployment using AWS and Docker"
+    ]
+  },
+  {
+    "name": "Political Sentiment Analysis",
+    "createdAt": "Apr 2024",
+    "description": "Final year project analyzing political sentiment from social media data using NLP techniques to gauge political trends.",
+    "technologies": ["Python", "NLP", "Machine Learning"],
+    "contributions": [
+      "Developed a political sentiment analysis tool for final year project",
+      "Performed sentiment analysis on social media data using NLP techniques",
+      "Implemented machine learning algorithms to gauge political trends"
+    ]
+  }
+]

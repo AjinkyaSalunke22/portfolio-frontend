@@ -1,0 +1,15 @@
+{
+  "aboutMe": "I'm a Computer Engineering graduate from Savitribai Phule Pune University with hands-on experience in full-stack development since June 2024. Currently working as a Trainee Programmer at YASH Technologies, I specialize in building scalable enterprise applications using modern web and cloud technologies. My expertise spans across Java, Python, JavaScript, and cutting-edge technologies including Azure, AWS, and AI integration. I'm passionate about leveraging Generative AI and Agentic AI development to create innovative solutions that bridge the gap between complex technical requirements and user-friendly applications. With strong communication skills and a deep understanding of the full SDLC, I excel in collaborative environments and am committed to continuous learning and delivering high-quality software solutions.",
+  "education": {
+    "degree": "Bachelor of Engineering - Computer Engineering",
+    "college": "Indira College of Engineering & Management, Pune",
+    "from": "Jun 2020",
+    "to": "May 2024"
+  },
+  "achievements": [
+    "22nd rank in Maharashtra Talent Search Exam (MTS)",
+    "15th rank in Maharashtra Olympiad Movement (MOM)",
+    "Project Group Lead in PBL and Final year project",
+    "Member of Bharat Scouts and Guides (B.S.G)"
+  ]
+}

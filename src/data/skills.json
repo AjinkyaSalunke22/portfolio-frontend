@@ -1,0 +1,26 @@
+[
+  {
+    "category": "Programming Languages",
+    "skills": ["Java", "Python", "JavaScript", "Node.js", "GoLang"]
+  },
+  {
+    "category": "Frameworks & Libraries",
+    "skills": ["FastAPI", "Express.js", "React", "Streamlit"]
+  },
+  {
+    "category": "Databases",
+    "skills": ["MySQL", "PostgreSQL", "MongoDB", "Elasticsearch"]
+  },
+  {
+    "category": "Cloud & DevOps",
+    "skills": ["AWS", "Azure", "Docker", "Git", "Jenkins"]
+  },
+  {
+    "category": "AI & Machine Learning",
+    "skills": ["Ollama", "HuggingFace", "Transformers", "Agentic AI"]
+  },
+  {
+    "category": "Tools & Others",
+    "skills": ["VS Code", "Linux", "REST APIs", "Agile", "SDLC"]
+  }
+]
