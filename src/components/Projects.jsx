@@ -1,14 +1,23 @@
 import { useState, useEffect } from 'react';
+import { dataCache } from '../utils/dataCache';
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/projects')
-      .then(response => response.json())
-      .then(data => setProjects(data))
-      .catch(error => console.error('Error loading projects:', error));
+    dataCache.fetchData('/projects')
+      .then(data => {
+        setProjects(data);
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error('Error loading projects:', error);
+        setLoading(false);
+      });
   }, []);
+
+  if (loading) return <div className="flex justify-center items-center h-64"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div></div>;
 
   return (
     <div className="max-w-6xl mx-auto animate-fade-in-up">

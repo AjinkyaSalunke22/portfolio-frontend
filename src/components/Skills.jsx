@@ -1,14 +1,23 @@
 import { useState, useEffect } from 'react';
+import { dataCache } from '../utils/dataCache';
 
 export default function Skills() {
   const [skills, setSkills] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/skills')
-      .then(response => response.json())
-      .then(data => setSkills(data))
-      .catch(error => console.error('Error loading skills:', error));
+    dataCache.fetchData('/skills')
+      .then(data => {
+        setSkills(data);
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error('Error loading skills:', error);
+        setLoading(false);
+      });
   }, []);
+
+  if (loading) return <div className="flex justify-center items-center h-64"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div></div>;
 
   return (
     <div className="max-w-6xl mx-auto animate-fade-in-up">

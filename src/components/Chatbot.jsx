@@ -42,8 +42,8 @@ export default function Chatbot() {
   const loadChatbotData = async () => {
     try {
       const [knowledgeRes, apiKeyRes] = await Promise.all([
-        fetch('http://localhost:5000/api/knowledge'),
-        fetch('http://localhost:5000/api/apikey')
+        fetch('https://portfolio-backend-okze.onrender.com/api/knowledge'),
+        fetch('https://portfolio-backend-okze.onrender.com/api/apikey')
       ]);
       
       const knowledgeData = await knowledgeRes.json();
