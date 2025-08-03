@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -14,14 +14,28 @@ export default function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [isLoading, setIsLoading] = useState(false);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }, []);
+
   const handleSectionChange = (section) => {
     if (section !== activeSection) {
       setIsLoading(true);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       setTimeout(() => {
         setActiveSection(section);
         setIsLoading(false);
       }, 150);
     }
+  };
+
+  const handleLogoClick = () => {
+    setIsLoading(true);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => {
+      setActiveSection('home');
+      setIsLoading(false);
+    }, 150);
   };
 
   const renderSection = () => {
@@ -48,6 +62,7 @@ export default function App() {
       <Header 
         activeSection={activeSection}
         setActiveSection={handleSectionChange}
+        onLogoClick={handleLogoClick}
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
       />

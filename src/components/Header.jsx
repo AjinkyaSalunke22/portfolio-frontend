@@ -1,9 +1,9 @@
-export default function Header({ activeSection, setActiveSection, isMenuOpen, setIsMenuOpen }) {
+export default function Header({ activeSection, setActiveSection, onLogoClick, isMenuOpen, setIsMenuOpen }) {
   return (
     <header className="fixed top-0 left-0 right-0 z-10 bg-white/90 backdrop-blur-lg border-b border-gray-200">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <button onClick={() => setActiveSection('home')} className="text-2xl font-black cursor-pointer bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+          <button onClick={onLogoClick} className="text-2xl font-black cursor-pointer bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
             <span className="underline">A</span>jinkya's Portfolio
           </button>
           <nav className="hidden md:flex md:space-x-8">
