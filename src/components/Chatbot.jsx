@@ -160,7 +160,7 @@ export default function Chatbot() {
               </svg>
             </div>
             <div className="absolute -top-10 -left-20 bg-gray-800 bg-opacity-70 text-gray-200 px-2 py-1 rounded-lg text-xs whitespace-nowrap animate-pulse">
-              🔍 Quick Portfolio Search
+                  AI Portfolio 🔍
             </div>
           </div>
         </div>

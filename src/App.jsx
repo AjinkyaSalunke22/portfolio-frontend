@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -8,15 +8,15 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Chatbot from "./components/Chatbot";
+import LoadingScreen from "./components/LoadingScreen";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const [isLoading, setIsLoading] = useState(false);
+  const [showLoadingScreen, setShowLoadingScreen] = useState(true);
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'auto' });
-  }, []);
+
 
   const handleSectionChange = (section) => {
     if (section !== activeSection) {
@@ -25,7 +25,7 @@ export default function App() {
       setTimeout(() => {
         setActiveSection(section);
         setIsLoading(false);
-      }, 150);
+      }, 300);
     }
   };
 
@@ -56,6 +56,10 @@ export default function App() {
         return <Home />;
     }
   };
+
+  if (showLoadingScreen) {
+    return <LoadingScreen onComplete={() => setShowLoadingScreen(false)} />;
+  }
 
   return (
     <div className="min-h-screen bg-white text-gray-800">
