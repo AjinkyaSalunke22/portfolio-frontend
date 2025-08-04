@@ -24,11 +24,11 @@ export default function Experience() {
       <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center animate-slide-in-down">Professional Experience</h2>
       <div className="space-y-8 animate-slide-in-up">
         {experiences.length > 0 ? experiences.map((exp, index) => (
-          <div key={index} className={`bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg p-8 border-l-4 ${index === 0 ? 'border-blue-500' : 'border-green-500'} hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out border border-gray-100`}>
+          <div key={index} className={`bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg p-8 border-l-4 ${index === 0 ? 'border-green-500' : 'border-gray-300'} hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out border-r border-t border-b border-gray-100`}>
             <div className="flex justify-between items-start mb-4">
               <div>
                 <h3 className="text-xl font-semibold text-gray-900">{exp.designation}</h3>
-                <p className={`${index === 0 ? 'text-blue-600' : 'text-green-600'} font-medium`}>{exp.company}</p>
+                <p className={`${index === 0 ? 'text-green-600' : 'text-gray-600'} font-medium`}>{exp.company}</p>
                 <p className="text-gray-600">{exp.location}</p>
               </div>
               <span className="text-gray-500 text-sm">{exp.from} – {exp.to}</span>
